@@ -1,24 +1,29 @@
-# TEMPLATE - Create your own projects with a defined template.
+# TEMPLATE - Create your own projects
+___________________________
 
-Configurations
-
-BACKEND - Java 17+ (Quarkus Framework) connected to MYSQL Database using Hibernate Framework
+BACKEND - Java 17+ (Quarkus Framework)
 1. Install JDK and MAVEN
 2. Install the needed dependencies using MAVEN;
 ``` mvn clean install ```
 3. Run the server;
+___________________________
 
 DATABASE (MYSQL + Hibernate) - Open mySQL and Hibernate will generate automatically the database.
 1. Open the file: '../main/resources/application.properties':
 ```spring.jpa.hibernate.ddl-auto=create``` to ```spring.jpa.hibernate.ddl-auto=validate```
+
+
+
 2. To enable emailSender you have to put your GMAIL credentials in:
 ```
 spring.mail.username=youremail@gmail.com
 spring.mail.password="yourpassword"
 ```
-3. If you want to use Kafka.
+3. If you want you can also use Kafka.
 
-FRONTEND (template-ui) - Angular 12+ using JWT authentication
+___________________________
+
+FRONTEND - Angular 12+ using JWT authentication
 1. Install NPM (Node Package Manager)
 2. Install the Angular CLI by running the following command:
 ```npm install -g @angular/cli```
